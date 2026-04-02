@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marcelo Calegare | Desenvolvedor Back-End</title>
+  <meta name="description"
+    content="Landing page profissional de Marcelo Calegare, desenvolvedor back-end com foco em Java e Python.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Manrope:wght@400;500;600;700;800&family=Sora:wght@500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <a class="skip-link" href="#main-content" data-i18n="skip_link">Pular para o conteúdo principal</a>
+  <div class="reading-progress" aria-hidden="true">
+    <span id="reading-progress-bar"></span>
+  </div>
+
+  <header class="site-header" id="top">
+    <div class="container header-shell">
+      <a class="brand" href="#hero" aria-label="Ir para o início">
+        <span class="brand-text">Marcelo Calegare</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav"
+        aria-label="Abrir navegação">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Navegação principal">
+        <a href="#sobre" data-i18n="nav_about">Sobre</a>
+        <a href="#habilidades" data-i18n="nav_skills">Habilidades</a>
+        <a href="#projetos" data-i18n="nav_projects">Projetos</a>
+        <a href="#trajetoria" data-i18n="nav_trajectory">Trajetória</a>
+        <a href="#formacao" data-i18n="nav_education">Formação</a>
+        <a href="#contato" class="button-contact" data-i18n="nav_contact">Contato</a>
+      </nav>
+
+      <!-- Language Switcher -->
+      <div class="lang-switcher" id="lang-switcher">
+        <button class="lang-btn active" data-lang="pt" aria-label="Português">PT</button>
+        <span class="lang-divider">|</span>
+        <button class="lang-btn" data-lang="en" aria-label="English">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero-section section" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow" data-i18n="hero_eyebrow">Disponível para oportunidades</p>
+          <h1>Marcelo Calegare</h1>
+          <p class="hero-lead" data-i18n="hero_lead">Desenvolvedor Back-End com foco em Java e Python</p>
+          <p class="hero-description" data-i18n="hero_description">
+            Construo soluções claras, funcionais e orientadas à prática, com foco em desenvolvimento back-end, APIs,
+            automações e evolução contínua da base técnica.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button" href="#projetos" data-i18n="hero_cta_projects">Ver projetos</a>
+            <a class="button button-ghost" href="#contato" data-i18n="hero_cta_contact">Entrar em contato</a>
+          </div>
+
+          <ul class="hero-highlights" aria-label="Resumo profissional">
+            <li>
+              <strong data-i18n="hero_hl1_title">Foco principal</strong>
+              <span data-i18n="hero_hl1_desc">Back-end, APIs e automação</span>
+            </li>
+            <li>
+              <strong data-i18n="hero_hl2_title">Stack atual</strong>
+              <span data-i18n="hero_hl2_desc">Java, Python, PostgreSQL e Docker</span>
+            </li>
+            <li>
+              <strong data-i18n="hero_hl3_title">Base</strong>
+              <span data-i18n="hero_hl3_desc">São Paulo, Brasil</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="portrait-card">
+            <div class="portrait-glow" aria-hidden="true"></div>
+            <div class="portrait-frame">
+              <img src="assets/images/marcelo-calegare.jpg" alt="Retrato profissional de Marcelo Calegare" width="640"
+                height="640">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="sobre">
+      <div class="container section-shell">
+        <div class="section-heading reveal">
+          <p class="eyebrow" data-i18n="about_eyebrow">Sobre mim</p>
+          <h2 data-i18n="about_heading">Clareza técnica, evolução constante e foco em entrega</h2>
+        </div>
+
+        <div class="about-grid">
+          <article class="content-card reveal">
+            <p data-i18n="about_p1">
+              Sou um desenvolvedor com foco em back-end, dedicado a construir aplicações objetivas, bem estruturadas e
+              úteis para problemas reais.
+            </p>
+            <p data-i18n="about_p2">
+              Minha atuação está concentrada em Java e Python, com interesse em APIs, bancos de dados, automação e
+              fundamentos de cloud e infraestrutura. Valorizo código limpo, aprendizado constante e projetos que
+              reforcem tanto a base técnica quanto a capacidade de entrega.
+            </p>
+            <p data-i18n="about_p3">
+              Busco oportunidades para contribuir com times que valorizem consistência, evolução e boa engenharia de
+              software.
+            </p>
+          </article>
+
+          <aside class="stack-card reveal" aria-label="Resumo em destaque">
+            <div>
+              <span class="stack-label" data-i18n="about_stack_profile">Perfil</span>
+              <strong data-i18n="about_stack_profile_desc">Desenvolvimento back-end em construção sólida</strong>
+            </div>
+            <div>
+              <span class="stack-label" data-i18n="about_stack_approach">Abordagem</span>
+              <strong data-i18n="about_stack_approach_desc">Projetos práticos, evolução consistente e base técnica crescente</strong>
+            </div>
+            <div>
+              <span class="stack-label" data-i18n="about_stack_interests">Interesses</span>
+              <strong data-i18n="about_stack_interests_desc">APIs, automação, bancos de dados, cloud e infraestrutura</strong>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="habilidades">
+      <div class="container section-shell">
+        <div class="section-heading reveal">
+          <p class="eyebrow" data-i18n="skills_eyebrow">Habilidades e tecnologias</p>
+          <h2 data-i18n="skills_heading">Base técnica atual de desenvolvimento e estudo</h2>
+          <p data-i18n="skills_description">
+            Tecnologias e ferramentas que fazem parte da minha rotina de aprendizado, prática e desenvolvimento de
+            projetos.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+          <article class="skill-group reveal">
+            <h3>Back-End</h3>
+            <ul class="tag-list">
+              <li>Java</li>
+              <li>Python</li>
+              <li>Flask</li>
+              <li>REST APIs</li>
+              <li>JWT</li>
+            </ul>
+          </article>
+
+          <article class="skill-group reveal">
+            <h3 data-i18n="skills_data">Dados</h3>
+            <ul class="tag-list">
+              <li>PostgreSQL</li>
+              <li>SQLite</li>
+              <li>SQLAlchemy</li>
+            </ul>
+          </article>
+
+          <article class="skill-group reveal">
+            <h3 data-i18n="skills_infra">Automação e Infra</h3>
+            <ul class="tag-list">
+              <li>Selenium</li>
+              <li>Web Scraping</li>
+              <li>Docker</li>
+              <li>Docker Compose</li>
+              <li>AWS</li>
+              <li>Azure</li>
+            </ul>
+          </article>
+
+          <article class="skill-group reveal">
+            <h3 data-i18n="skills_tools">Ferramentas</h3>
+            <ul class="tag-list">
+              <li>Git</li>
+              <li>GitHub</li>
+              <li>Bitbucket</li>
+              <li>VS Code</li>
+              <li>IntelliJ IDEA</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projetos">
+      <div class="container section-shell">
+        <div class="section-heading reveal">
+          <p class="eyebrow" data-i18n="projects_eyebrow">Projetos em destaque</p>
+          <h2 data-i18n="projects_heading">Projetos que traduzem evolução técnica e foco prático</h2>
+          <p data-i18n="projects_description">
+            Cada projeto reforça um eixo importante da minha formação: construção de APIs, automação e consolidação de
+            fundamentos em Java.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card reveal">
+            <div class="project-top">
+              <span class="project-index">01</span>
+              <ul class="project-stack" aria-label="Stack do projeto API Music">
+                <li>Python</li>
+                <li>Flask</li>
+                <li>SQLite</li>
+                <li>JWT</li>
+              </ul>
+            </div>
+            <h3>API Music</h3>
+            <p data-i18n="project1_desc">
+              API REST desenvolvida em Python com Flask para gerenciamento de músicas, com operações de cadastro,
+              listagem, edição e remoção. O projeto também inclui autenticação com JWT e integração com banco de dados
+              relacional.
+            </p>
+            <a href="https://github.com/marcelocalegare/API-MUSIC-PYTHON" target="_blank" rel="noreferrer"
+              data-i18n="project_link">
+              Ver projeto
+            </a>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-top">
+              <span class="project-index">02</span>
+              <ul class="project-stack" aria-label="Stack do projeto Web Scraping de Cotações">
+                <li>Python</li>
+                <li>Selenium</li>
+                <li data-i18n="project2_stack_automation">Automação</li>
+              </ul>
+            </div>
+            <h3 data-i18n="project2_title">Web Scraping de Cotações</h3>
+            <p data-i18n="project2_desc">
+              Aplicação em Python para coleta automatizada de cotações de câmbio em tempo real. O projeto reforça
+              conhecimentos em automação, extração de dados e manipulação de informações externas de forma
+              estruturada.
+            </p>
+            <a href="https://github.com/marcelocalegare/Web-Scraping-Cotacao-Cambio" target="_blank" rel="noreferrer"
+              data-i18n="project_link">
+              Ver projeto
+            </a>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-top">
+              <span class="project-index">03</span>
+              <ul class="project-stack" aria-label="Stack do projeto Java">
+                <li>Java</li>
+                <li data-i18n="project3_stack_oop">POO</li>
+                <li data-i18n="project3_stack_fundamentals">Fundamentos</li>
+              </ul>
+            </div>
+            <h3>Projects Based Learning Java</h3>
+            <p data-i18n="project3_desc">
+              Repositório dedicado à consolidação da base em Java, cobrindo lógica de programação, programação
+              orientada a objetos, estruturas de dados e fundamentos essenciais para construção de aplicações mais
+              robustas.
+            </p>
+            <a href="https://github.com/marcelocalegare/Projects-Based-Learning-Java" target="_blank" rel="noreferrer"
+              data-i18n="project_link">
+              Ver projeto
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="trajetoria">
+      <div class="container section-shell">
+        <div class="section-heading reveal">
+          <p class="eyebrow" data-i18n="trajectory_eyebrow">Trajetória</p>
+          <h2 data-i18n="trajectory_heading">Uma construção guiada por prática, disciplina e aprofundamento técnico</h2>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <span class="timeline-marker" aria-hidden="true"></span>
+            <div class="timeline-content">
+              <span class="timeline-label" data-i18n="traj1_label">Direção técnica</span>
+              <h3 data-i18n="traj1_title">Foco em desenvolvimento back-end</h3>
+              <p data-i18n="traj1_desc">
+                Minha trajetória tem sido guiada por estudo consistente, prática em projetos e aprofundamento técnico
+                em desenvolvimento back-end.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <span class="timeline-marker" aria-hidden="true"></span>
+            <div class="timeline-content">
+              <span class="timeline-label" data-i18n="traj2_label">Prática orientada a projeto</span>
+              <h3 data-i18n="traj2_title">Aprendizado aplicado em Java e Python</h3>
+              <p data-i18n="traj2_desc">
+                Tenho direcionado minha evolução para a construção de uma base sólida em Java e Python, combinando
+                fundamentos de programação, desenvolvimento de APIs, integração com banco de dados e automação.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <span class="timeline-marker" aria-hidden="true"></span>
+            <div class="timeline-content">
+              <span class="timeline-label" data-i18n="traj3_label">Momento atual</span>
+              <h3 data-i18n="traj3_title">Preparação para desafios cada vez mais relevantes</h3>
+              <p data-i18n="traj3_desc">
+                Esse processo reflete um perfil comprometido com crescimento contínuo, disciplina técnica e preparação
+                para contribuir em contextos profissionais com mais responsabilidade e complexidade.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="formacao">
+      <div class="container section-shell">
+        <div class="section-heading reveal">
+          <p class="eyebrow" data-i18n="edu_eyebrow">Formação e desenvolvimento</p>
+          <h2 data-i18n="edu_heading">Base em construção com estudo contínuo e prática consistente</h2>
+        </div>
+
+        <div class="formation-grid">
+          <article class="formation-card reveal">
+            <h3 data-i18n="edu_card1_title">Formação</h3>
+            <p data-i18n="edu_card1_desc">
+              Formação contínua em tecnologia, com foco em desenvolvimento back-end, bancos de dados, automação e boas
+              práticas de software.
+            </p>
+          </article>
+
+          <article class="formation-card reveal">
+            <h3 data-i18n="edu_card2_title">Desenvolvimento técnico</h3>
+            <p data-i18n="edu_card2_desc">
+              Além do estudo teórico, mantenho uma rotina de desenvolvimento prático por meio de projetos próprios,
+              explorando ferramentas, linguagens e conceitos que fortalecem minha atuação técnica.
+            </p>
+          </article>
+
+          <article class="formation-card reveal">
+            <h3 data-i18n="edu_card3_title">Certificações</h3>
+            <p data-i18n="edu_card3_desc">
+              Esta seção pode evoluir com certificações e formações complementares à medida que a trajetória avança,
+              mantendo a página alinhada ao crescimento profissional.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contato">
+      <div class="container">
+        <div class="contact-shell reveal">
+          <div class="contact-copy">
+            <p class="eyebrow" data-i18n="contact_eyebrow">Contato</p>
+            <h2 data-i18n="contact_heading">Vamos conversar</h2>
+            <p data-i18n="contact_description">
+              Estou aberto a oportunidades, conexões profissionais e novos desafios na área de tecnologia. Se você
+              busca alguém com foco em back-end, vontade de evoluir e compromisso com qualidade, será um prazer
+              conversar.
+            </p>
+          </div>
+
+          <div class="contact-actions">
+            <a class="button" href="mailto:marcelocalegaredev@gmail.com" data-i18n="contact_email_btn">Enviar e-mail</a>
+            <a class="button button-ghost" href="https://www.linkedin.com/in/marcelo-calegare/" target="_blank"
+              rel="noreferrer">
+              LinkedIn
+            </a>
+            <a class="button button-ghost" href="https://github.com/marcelocalegare" target="_blank" rel="noreferrer">
+              GitHub
+            </a>
+          </div>
+
+          <ul class="contact-list" aria-label="Canais de contato">
+            <li>
+              <span>E-mail</span>
+              <a href="mailto:marcelocalegaredev@gmail.com">marcelocalegaredev@gmail.com</a>
+            </li>
+            <li>
+              <span>GitHub</span>
+              <a href="https://github.com/marcelocalegare" target="_blank"
+                rel="noreferrer">github.com/marcelocalegare</a>
+            </li>
+            <li>
+              <span>LinkedIn</span>
+              <a href="https://www.linkedin.com/in/marcelo-calegare/" target="_blank" rel="noreferrer">
+                linkedin.com/in/marcelo-calegare
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-shell">
+      <div>
+        <p class="footer-name">Marcelo Calegare</p>
+        <p class="footer-role" data-i18n="footer_role">Desenvolvedor Back-End com foco em Java e Python.</p>
+      </div>
+
+      <div class="footer-meta">
+        <p data-i18n="footer_thanks">Obrigado pela visita. Vamos construir algo relevante juntos.</p>
+        <p>&copy; <span id="current-year">2026</span> Marcelo Calegare.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+
+</html>
